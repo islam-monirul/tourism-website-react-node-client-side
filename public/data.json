@@ -1,0 +1,80 @@
+[
+  {
+    "id": "1",
+    "category": "travel",
+    "name": "Sylhet Family/ Couple Package",
+    "placesToVisit": "Jaflong, LalaKhal, Bichanakandi, ShadaPathor, Cha-Bagan",
+    "startDate": "17 November, 2021",
+    "endDate": "21 November, 2021",
+    "duration": 3,
+    "traveldetails": "Travel will be by NON A/C bus. You will get breakfast, Lunch, Dinner, Local Transportation, Troller fee etc.",
+    "thingsToKeep": "NID/Passport",
+    "cost": 6500,
+    "img": "https://ibb.co/QXnpqqP"
+  },
+  {
+    "id": "2",
+    "category": "travel",
+    "name": "Sylhet Day Tour Package",
+    "placesToVisit": "Jaflong, LalaKhal, Cha-Bagan",
+    "startDate": "19 November, 2021",
+    "endDate": "20 November, 2021",
+    "duration": 1,
+    "traveldetails": "Travel will be by NON A/C bus. You will get breakfast, Lunch, Dinner, Local Transportation, Troller fee etc.",
+    "thingsToKeep": "NID/Passport",
+    "cost": 1350,
+    "img": "https://ibb.co/t4MVKXP"
+  },
+  {
+    "id": "3",
+    "category": "travel",
+    "name": "Shunamgonj Tour Package",
+    "placesToVisit": "Jadukata, Niladri Lake, Lakma Chora, Tanguar Haor",
+    "startDate": "23 November, 2021",
+    "endDate": "26 November, 2021",
+    "duration": 3,
+    "traveldetails": "Travel will be by NON A/C bus. You will get breakfast, Lunch, Dinner, Local Transportation, Troller fee, Highway Snacks",
+    "thingsToKeep": "NID/Passport",
+    "cost": 4000,
+    "img": "https://ibb.co/DL3DwMK"
+  },
+  {
+    "id": "4",
+    "category": "travel",
+    "name": "Nikli Haor Tour Package",
+    "placesToVisit": "Chatir Chor, Nikli Haor, Mithamoin Road",
+    "startDate": "26 November, 2021",
+    "endDate": "27 November, 2021",
+    "duration": 1,
+    "traveldetails": "Travel will be by NON A/C bus. You will get breakfast, Lunch, Dinner, Local Transportation, Troller fee, Highway Snacks",
+    "thingsToKeep": "NID/Passport",
+    "cost": 1700,
+    "img": "https://ibb.co/r2b2pq2"
+  },
+  {
+    "id": "5",
+    "category": "travel",
+    "name": "Saint Martin Tour Package",
+    "placesToVisit": "Saint Martin",
+    "startDate": "1 December, 2021",
+    "endDate": "5 November, 2021",
+    "duration": 4,
+    "traveldetails": "Travel will be by A/C bus. You will get breakfast, Lunch, Dinner, Local Transportation, Troller fee, Highway Snacks. You will stay at Mermaid Resort.",
+    "thingsToKeep": "NID/Passport",
+    "cost": 15000,
+    "img": "https://ibb.co/C6Wwjjr"
+  },
+  {
+    "id": "6",
+    "category": "travel",
+    "name": "Cox's Bazar Tour Package",
+    "placesToVisit": "KolaToli Beach, Inani Beach",
+    "startDate": "5 December, 2021",
+    "endDate": "7 November, 2021",
+    "duration": 2,
+    "traveldetails": "Travel will be by A/C bus. You will get breakfast, Lunch, Dinner, Local Transportation, Troller fee, Highway Snacks. You will stay at Mermaid Eco Resort on the first day and Mermaid Beach Resort on the second day.",
+    "thingsToKeep": "NID/Passport",
+    "cost": 21000,
+    "img": "https://ibb.co/qRP5bcF"
+  }
+]
