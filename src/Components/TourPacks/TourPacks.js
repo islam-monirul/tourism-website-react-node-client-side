@@ -18,7 +18,8 @@ const TourPacks = () => {
         <h1 className="text-center fw-bold mb-5">Upcoming Tours</h1>
         <Row
           xs={1}
-          md={3}
+          md={2}
+          lg={3}
           className="g-5 py-4"
           style={{ marginRight: "0", marginLeft: "0" }}
         >
