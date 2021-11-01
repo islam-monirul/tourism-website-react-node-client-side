@@ -1,0 +1,29 @@
+.custom-text-color1 {
+  color: #e01250;
+}
+
+.custom-text-color2 {
+  color: #e012508e;
+}
+
+.custom-btn-color {
+  background-color: #e01250;
+  border: none;
+  color: #fff;
+}
+
+.custom-btn-color:hover {
+  background-color: #000;
+}
+
+.tourCard {
+  background-color: #fff;
+  padding: 20px;
+  transition: all 0.6s ease;
+  border: none;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.tourCard:hover {
+  transform: translateY(-25px);
+}
