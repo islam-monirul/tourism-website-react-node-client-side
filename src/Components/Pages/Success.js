@@ -1,16 +1,16 @@
 import React from "react";
 import { Button, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./NotFound.css";
+import "./Success.css";
 
-const NotFound = () => {
+const Success = () => {
   return (
     <section className="py-5">
-      <Container className="notFoundPage d-flex justify-content-center align-items-center">
+      <Container className="successPage d-flex justify-content-center align-items-center">
         <Row>
-          <h1 className="text-danger text-center">404</h1>
+          <h1 className="text-success text-center">Success!!</h1>
           <p className="text-secondary text-center">
-            Page Not Found!! The page you are looking for is not available.
+            Congratulations !! Your Operation has been Successful.
           </p>
 
           <Button variant="dark" as={Link} to="/home">
@@ -22,4 +22,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default Success;

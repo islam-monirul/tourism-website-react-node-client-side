@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const PlaceOrder = () => {
   const { user } = useAuth();
   const { tourId } = useParams();
   //   console.log(tourId);
+
+  let history = useHistory();
 
   const [pack, setPack] = useState({});
 
@@ -51,7 +53,7 @@ const PlaceOrder = () => {
         .then((res) => res.json())
         .then((data) => {
           if (data.insertedId) {
-            alert("Added orders");
+            history.push("/success");
           }
         });
     }

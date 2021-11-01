@@ -1,0 +1,26 @@
+.custom-text-color1 {
+  color: #e01250;
+}
+
+.footer {
+  background-color: rgb(17, 17, 17);
+  padding-top: 70px;
+  padding-bottom: 45px;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 14px;
+}
+
+.subscribeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 10px;
+}
+
+.copyright {
+  padding-top: 25px;
+  border-top: 1px solid #1a2e4a;
+}

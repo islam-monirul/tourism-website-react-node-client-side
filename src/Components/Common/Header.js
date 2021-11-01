@@ -2,13 +2,14 @@ import React from "react";
 import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import "./Common.css";
 
 const Header = () => {
   const { user, logOut } = useAuth();
   return (
     <Navbar bg="light" expand="lg" className="border-bottom align-middle">
       <Container>
-        <Navbar.Brand href="#" className="fw-bold">
+        <Navbar.Brand as={Link} to="/" className="fw-bold">
           MTP
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -31,20 +32,26 @@ const Header = () => {
               </Nav>
             )}
           </Nav>
+          <Navbar.Text>
+            <a className="text-decoration-none text-dark" as={Link} to="/">
+              {user?.displayName ? `Welcome, ${user.displayName}` : ""}
+            </a>
+          </Navbar.Text>
+
           {user?.email ? (
-            <Button variant="light" onClick={logOut}>
+            <Button variant="light" className="text-danger" onClick={logOut}>
               Logout
             </Button>
           ) : (
-            <Nav.Link as={Link} to="/login">
+            <Nav.Link
+              as={Link}
+              variant="light"
+              className="text-success"
+              to="/login"
+            >
               Login
             </Nav.Link>
           )}
-          <Navbar.Text>
-            <a href="#login">
-              {user?.displayName ? `Signed in as: ${user.displayName}` : ""}
-            </a>
-          </Navbar.Text>
         </Navbar.Collapse>
       </Container>
     </Navbar>

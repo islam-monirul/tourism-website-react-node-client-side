@@ -11,6 +11,8 @@ import MyOrders from "./Components/Pages/MyOrders";
 import ManageAllOrders from "./Components/Pages/ManageAllOrders";
 import AddNewTourPack from "./Components/Pages/AddNewTourPack";
 import PlaceOrder from "./Components/Pages/PlaceOrder";
+import Success from "./Components/Pages/Success";
+import Footer from "./Components/Common/Footer";
 
 function App() {
   return (
@@ -42,12 +44,16 @@ function App() {
             <PrivateRoute path="/placeOrder/:tourId">
               <PlaceOrder></PlaceOrder>
             </PrivateRoute>
+            <PrivateRoute path="/success">
+              <Success></Success>
+            </PrivateRoute>
 
             <Route path="*">
               <NotFound></NotFound>
             </Route>
           </Switch>
         </Router>
+        <Footer></Footer>
       </AuthProvider>
     </div>
   );

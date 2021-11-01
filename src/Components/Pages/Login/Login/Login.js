@@ -8,11 +8,11 @@ const Login = () => {
   const { signInUsingGoogle } = useAuth();
 
   return (
-    <section className="loginPage">
-      <Container>
+    <section>
+      <Container className="loginPage d-flex justify-content-center align-items-center">
         <Row>
-          <h1 className="text-center mb-4">Please Login</h1>
-          <Col md={6} className="mx-auto formStyle">
+          <h1 className="text-center mb-4 custom-text-color1">Please Login</h1>
+          <Col md={10} className="mx-auto formStyle">
             <form>
               <div className="d-grid gap-2 mt-2">
                 <Button
@@ -24,10 +24,6 @@ const Login = () => {
                 </Button>
               </div>
             </form>
-
-            <div className="mt-5 text-center fw-bold">
-              Are you a new user ? <NavLink to="/signup">Click here</NavLink>
-            </div>
           </Col>
         </Row>
       </Container>

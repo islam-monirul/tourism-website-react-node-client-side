@@ -1,0 +1,12 @@
+.carousel-indicators {
+  bottom: -50px;
+}
+
+.heroSection {
+  padding: 100px 0;
+  background-color: #e012501a;
+}
+
+.custom-button-color:hover {
+  background-color: #000;
+}
