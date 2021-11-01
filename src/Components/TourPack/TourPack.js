@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Card, Col } from "react-bootstrap";
 import "./TourPack.css";
+import { Link } from "react-router-dom";
 
 const TourPack = (props) => {
   const {
@@ -12,6 +13,7 @@ const TourPack = (props) => {
     thingsToKeep,
     cost,
     img,
+    _id,
   } = props.info;
   return (
     <Col>
@@ -19,6 +21,7 @@ const TourPack = (props) => {
         <Card.Img src={img} className="img-fluid" />
         <Card.Body className="pb-0">
           <h5 className="fw-bold">{name}</h5>
+          <p>{_id}</p>
           <p className="custom-text-color1">
             {startDate} - {endDate}
           </p>
@@ -35,7 +38,13 @@ const TourPack = (props) => {
           <h4 className="custom-text-color1 pb-2">BDT {cost}</h4>
           <div className="d-grid gap-2">
             <Button variant="outline-dark">View Details</Button>
-            <Button className="custom-btn-color">Book Now</Button>
+            <Button
+              as={Link}
+              to={`/placeOrder/${_id}`}
+              className="custom-btn-color"
+            >
+              Book Now
+            </Button>
           </div>
         </Card.Footer>
       </Card>

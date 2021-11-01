@@ -10,6 +10,7 @@ import AuthProvider from "./Context/AuthProvider";
 import MyOrders from "./Components/Pages/MyOrders";
 import ManageAllOrders from "./Components/Pages/ManageAllOrders";
 import AddNewTourPack from "./Components/Pages/AddNewTourPack";
+import PlaceOrder from "./Components/Pages/PlaceOrder";
 
 function App() {
   return (
@@ -38,8 +39,8 @@ function App() {
             <PrivateRoute path="/addnewtourpack">
               <AddNewTourPack></AddNewTourPack>
             </PrivateRoute>
-            <PrivateRoute path="/placeOrder/:id">
-              <AddNewTourPack></AddNewTourPack>
+            <PrivateRoute path="/placeOrder/:tourId">
+              <PlaceOrder></PlaceOrder>
             </PrivateRoute>
 
             <Route path="*">

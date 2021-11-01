@@ -1,10 +1,17 @@
 import React from "react";
+import { Container, Row } from "react-bootstrap";
+import useAuth from "../../hooks/useAuth";
 
 const MyOrders = () => {
+  const { user } = useAuth();
   return (
-    <div>
-      <h1>My Orders</h1>
-    </div>
+    <section>
+      <Container>
+        <Row>
+          <h1>My Orders</h1>
+        </Row>
+      </Container>
+    </section>
   );
 };
 
