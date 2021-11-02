@@ -13,9 +13,8 @@ const AddNewTourPack = () => {
   } = useForm();
   const onSubmit = (data) => {
     if (data.name) {
-      // setting default category and img
+      // setting default category
       data.category = "travel";
-      data.img = "https://i.ibb.co/zQMjQPT/noImg.jpg";
 
       fetch("https://scary-coffin-51525.herokuapp.com/tours/addnew", {
         method: "POST",
@@ -168,6 +167,20 @@ const AddNewTourPack = () => {
                   </Form.Group>
                 </Col>
               </Row>
+
+              <Form.Group className="mb-3">
+                <Form.Label>Paste the image URL here</Form.Label>
+                <Form.Control
+                  type="text"
+                  {...register("img", { required: true })}
+                  placeholder="e.g. https://i.ibb.co/zQMjQPT/noImg.jpg"
+                />
+                {errors.img && (
+                  <span className="mt-2 custom-text-color1">
+                    This field is required
+                  </span>
+                )}
+              </Form.Group>
 
               <Button type="submit" variant="dark" className="mt-2">
                 Add New Tour Package
