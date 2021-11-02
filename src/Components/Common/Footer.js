@@ -19,9 +19,9 @@ const Footer = () => {
             <p>
               <strong>Mo-TourPhobia | Tour Planner</strong> is an imaginary tour
               planner website. This is built with React.js, Firebase,
-              React-bootstrap, React router, Node.js, MongoDB etc. as an
-              assignment of Complete Web Development with Jhankar Mahbub by
-              Monirul Islam.
+              React-bootstrap, React router, Node.js, Express js, MongoDB etc.
+              as an assignment of Complete Web Development with Jhankar Mahbub
+              by Monirul Islam.
             </p>
           </Col>
           <Col md={6} className="subscribeBtn">

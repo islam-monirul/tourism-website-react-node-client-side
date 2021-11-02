@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Container, Row, Table } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
+import "./Orders.css";
 
 const ManageAllOrders = () => {
   const [allorders, setAllOrders] = useState([]);
@@ -65,7 +66,7 @@ const ManageAllOrders = () => {
 
   return (
     <section className="py-5">
-      <Container>
+      <Container className="orderPage">
         <Row>
           <h1 className="text-center pb-5">All Orders</h1>
           {allorders.length > 0 ? (

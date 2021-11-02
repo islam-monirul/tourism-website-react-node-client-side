@@ -2,6 +2,8 @@ import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../../../hooks/useAuth";
+import { FcGoogle } from "react-icons/fc";
+
 import "./Login.css";
 
 const Login = () => {
@@ -16,11 +18,11 @@ const Login = () => {
             <form>
               <div className="d-grid gap-2 mt-2">
                 <Button
-                  variant="dark"
+                  variant="outline-dark"
                   className="fs-5"
                   onClick={signInUsingGoogle}
                 >
-                  Continue with google
+                  <FcGoogle /> &nbsp; Continue with google
                 </Button>
               </div>
             </form>

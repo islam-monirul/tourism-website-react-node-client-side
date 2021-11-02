@@ -10,3 +10,13 @@
 .custom-text-color1 {
   color: #e01250;
 }
+
+.custom-btn-color {
+  background-color: #e01250;
+  border: none;
+  color: #fff;
+}
+
+.custom-btn-color:hover {
+  background-color: #000;
+}

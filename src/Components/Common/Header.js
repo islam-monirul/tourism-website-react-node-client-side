@@ -7,10 +7,15 @@ import "./Common.css";
 const Header = () => {
   const { user, logOut } = useAuth();
   return (
-    <Navbar bg="light" expand="lg" className="border-bottom align-middle">
+    <Navbar
+      variant="dark"
+      sticky="top"
+      expand="lg"
+      className="custom-bg-color align-middle py-3"
+    >
       <Container>
-        <Navbar.Brand as={Link} to="/" className="fw-bold">
-          MTP
+        <Navbar.Brand as={Link} to="/" className="fw-bold text-middle fs-4">
+          MT
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll" className="justify-content-end">
@@ -33,20 +38,27 @@ const Header = () => {
             )}
           </Nav>
           <Navbar.Text>
-            <a className="text-decoration-none text-dark" as={Link} to="/">
-              {user?.displayName ? `Welcome, ${user.displayName}` : ""}
+            <a
+              className="text-decoration-none text-dark mx-md-3 me-3"
+              as={Link}
+              to="/"
+            >
+              {user?.displayName ? `Hi, ${user.displayName}` : ""}
             </a>
           </Navbar.Text>
 
           {user?.email ? (
-            <Button variant="light" className="text-danger" onClick={logOut}>
+            <Button
+              variant="light"
+              className="custom-text-color1"
+              onClick={logOut}
+            >
               Logout
             </Button>
           ) : (
             <Nav.Link
               as={Link}
-              variant="light"
-              className="text-success"
+              className="custom-text-color1 p-0 loginBtn"
               to="/login"
             >
               Login

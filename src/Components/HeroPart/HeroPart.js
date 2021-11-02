@@ -1,8 +1,6 @@
 import React from "react";
-import { Button, Carousel, Col, Container, Image, Row } from "react-bootstrap";
+import { Button, Carousel, Col, Container, Row } from "react-bootstrap";
 import { useHistory } from "react-router";
-import hero from "../../images/carousel-image-1.png";
-import hero2 from "../../images/carousel-image-2.png";
 import "./HeroPart.css";
 
 const HeroPart = () => {
@@ -13,30 +11,34 @@ const HeroPart = () => {
     history.push("/");
   };
   return (
-    <section className="heroSection">
-      <Carousel variant="dark">
+    <section>
+      <Carousel variant="light" className="heroSection">
         <Carousel.Item>
           <Container>
-            <Row className="d-flex align-items-center">
-              <Col md={7} className="d-flex justify-content-center">
-                <Image src={hero} fluid />
-              </Col>
-              <Col md={5}>
+            <Row className="d-flex align-items-center justify-content-center">
+              <Col>
                 <div>
-                  <h1 className="fw-bold">Travel</h1>
-                  <h2>
-                    the <span className="text-danger"> Whole World</span>
-                  </h2>
-                  <h1 className="fw-bold">
-                    with <span className="fw-normal">us</span>
+                  <h1 className="fw-bold text-white text-center">
+                    Travel Around
                   </h1>
-                  <p>Let's break the limit and tour together</p>
+                  <h2 className="text-white text-center">
+                    The{" "}
+                    <span className="fw-bold custom-text-color1">
+                      {" "}
+                      Whole World
+                    </span>{" "}
+                    <span className="fw-bold text-white">with </span>us...
+                  </h2>
+                  <p className="text-white text-center">
+                    Let's break the limit and travel together around the
+                    beautiful places
+                  </p>
                   <Button
-                    variant="dark"
-                    className="mt-3"
+                    variant="outline-light"
+                    className="mt-3 d-block mx-auto"
                     onClick={() => handleLearnMore()}
                   >
-                    Book Appointment
+                    Learn More
                   </Button>
                 </div>
               </Col>
@@ -46,26 +48,29 @@ const HeroPart = () => {
 
         <Carousel.Item>
           <Container>
-            <Row className="d-flex align-items-center">
-              <Col md={7} className="d-flex justify-content-center">
-                <Image src={hero2} fluid />
-              </Col>
-              <Col md={5}>
+            <Row className="d-flex align-items-center justify-content-center">
+              <Col>
                 <div>
-                  <h1 className="fw-bold">We</h1>
-                  <h2>
-                    Promise <span className="text-danger"> to provide</span>
+                  <h1 className="fw-bold text-white text-center">We Promise</h1>
+                  <h2 className="text-white text-center">
+                    To
+                    <span className="fw-bold text-white"> Provide</span>
+                    <span className="fw-bold custom-text-color1">
+                      {" "}
+                      the best{" "}
+                    </span>
+                    experience!
                   </h2>
-                  <h1 className="fw-bold">
-                    the best <span className="fw-normal">experience!</span>
-                  </h1>
-                  <p>Let's break the limit and tour together</p>
+                  <p className="text-white text-center">
+                    Let's break the limit and travel together around the
+                    beautiful places
+                  </p>
                   <Button
-                    variant="dark"
-                    className="mt-3"
+                    variant="outline-light"
+                    className="mt-3 d-block mx-auto"
                     onClick={() => handleLearnMore()}
                   >
-                    Book Appointment
+                    Learn More
                   </Button>
                 </div>
               </Col>

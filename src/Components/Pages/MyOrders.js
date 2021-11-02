@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Container, Row, Table } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import "./Orders.css";
 
 const MyOrders = () => {
   const { user } = useAuth();
@@ -67,7 +68,7 @@ const MyOrders = () => {
 
   return (
     <section className="py-5">
-      <Container>
+      <Container className="orderPage">
         <Row>
           <h1 className="text-center pb-5">My Orders</h1>
           {mylist.length > 0 ? (

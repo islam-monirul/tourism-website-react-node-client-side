@@ -13,7 +13,7 @@ const TourPacks = () => {
   }, []);
 
   return (
-    <div>
+    <section className="bg-light">
       <Container className="allTours">
         <h1 className="text-center fw-bold mb-5">Upcoming Tours</h1>
         <Row
@@ -28,7 +28,7 @@ const TourPacks = () => {
           ))}
         </Row>
       </Container>
-    </div>
+    </section>
   );
 };
 
