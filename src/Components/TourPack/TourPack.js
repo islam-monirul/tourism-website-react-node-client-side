@@ -22,7 +22,8 @@ const TourPack = (props) => {
         <Card.Body className="pb-0">
           <h5 className="fw-bold">{name}</h5>
           <p className="custom-text-color1">
-            {startDate} - {endDate}
+            {startDate} <strong className="text-dark"> - To - </strong>{" "}
+            {endDate}
           </p>
           <p className="text-secondary">
             <strong>Places to cover :</strong> {placesToVisit}

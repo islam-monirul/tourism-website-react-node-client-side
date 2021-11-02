@@ -26,10 +26,10 @@ const Header = () => {
             {user?.email && (
               <Nav>
                 <Nav.Link as={Link} to="/myorders">
-                  My Orders
+                  My Bookings
                 </Nav.Link>
                 <Nav.Link as={Link} to="/manageallorders">
-                  Manage All Orders
+                  Manage All Bookings
                 </Nav.Link>
                 <Nav.Link as={Link} to="/addnewtourpack">
                   Add New Tour

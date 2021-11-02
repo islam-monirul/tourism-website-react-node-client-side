@@ -23,6 +23,13 @@ const Footer = () => {
               as an assignment of Complete Web Development with Jhankar Mahbub
               by Monirul Islam.
             </p>
+            <p>
+              <span className="custom-text-color1">Email :</span>{" "}
+              devmonir.uiu@gmail.com
+            </p>
+            <p>
+              <span className="custom-text-color1">Tel :</span> +880 1521333333
+            </p>
           </Col>
           <Col md={6} className="subscribeBtn">
             <InputGroup>

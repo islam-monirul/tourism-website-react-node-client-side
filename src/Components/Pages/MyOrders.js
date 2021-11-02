@@ -70,7 +70,7 @@ const MyOrders = () => {
     <section className="py-5">
       <Container className="orderPage">
         <Row>
-          <h1 className="text-center pb-5">My Orders</h1>
+          <h1 className="text-center pb-5">My Bookings</h1>
           {mylist.length > 0 ? (
             <Table responsive striped bordered hover>
               <thead>
@@ -88,12 +88,22 @@ const MyOrders = () => {
                     <td>{order.selectedPack}</td>
                     <td>{order.cost}</td>
                     <td>{order.status === 0 ? "Pending" : "Completed"}</td>
-                    {order.status === 0 && (
+                    {order.status === 0 ? (
+                      <td>
+                        <Button
+                          variant="outline-success"
+                          className="d-block mx-auto"
+                          onClick={() => handleUpdate(order._id)}
+                        >
+                          Complete
+                        </Button>
+                      </td>
+                    ) : (
                       <td>
                         <Button
                           variant="success"
                           className="d-block mx-auto"
-                          onClick={() => handleUpdate(order._id)}
+                          disabled
                         >
                           Complete
                         </Button>
