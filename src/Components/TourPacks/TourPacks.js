@@ -7,7 +7,7 @@ const TourPacks = () => {
   const [tours, setTours] = useState([]);
 
   useEffect(() => {
-    fetch("https://scary-coffin-51525.herokuapp.com/tours")
+    fetch("https://tour-api-6xw9.onrender.com/tours")
       .then((res) => res.json())
       .then((data) => setTours(data));
   }, []);

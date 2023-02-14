@@ -16,7 +16,7 @@ const AddNewTourPack = () => {
       // setting default category
       data.category = "travel";
 
-      fetch("https://scary-coffin-51525.herokuapp.com/tours/addnew", {
+      fetch("https://tour-api-6xw9.onrender.com/tours/addnew", {
         method: "POST",
         headers: {
           "content-type": "application/json",

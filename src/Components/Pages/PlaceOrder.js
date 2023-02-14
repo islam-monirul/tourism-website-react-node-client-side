@@ -14,7 +14,7 @@ const PlaceOrder = () => {
   const [pack, setPack] = useState({});
 
   useEffect(() => {
-    fetch(`https://scary-coffin-51525.herokuapp.com/tours/${tourId}`)
+    fetch(`https://tour-api-6xw9.onrender.com/tours/${tourId}`)
       .then((res) => res.json())
       .then((data) => setPack(data));
   }, []);
@@ -43,7 +43,7 @@ const PlaceOrder = () => {
 
       //  console.log(newOrder);
 
-      fetch("https://scary-coffin-51525.herokuapp.com/tours/placeorders", {
+      fetch("https://tour-api-6xw9.onrender.com/tours/placeorders", {
         method: "POST",
         headers: {
           "content-type": "application/json",

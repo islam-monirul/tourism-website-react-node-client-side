@@ -13,7 +13,7 @@ const MyOrders = () => {
   const useremail = user.email;
 
   useEffect(() => {
-    fetch(`https://scary-coffin-51525.herokuapp.com/myorders/${useremail}`)
+    fetch(`https://tour-api-6xw9.onrender.com/myorders/${useremail}`)
       .then((res) => res.json())
       .then((data) => setMylist(data));
   }, []);
@@ -23,7 +23,7 @@ const MyOrders = () => {
     const proceed = window.confirm("Are you sure you want to delete?");
 
     if (proceed) {
-      const url = `https://scary-coffin-51525.herokuapp.com/orders/${id}`;
+      const url = `https://tour-api-6xw9.onrender.com/orders/${id}`;
       fetch(url, {
         method: "DELETE",
       })
@@ -50,7 +50,7 @@ const MyOrders = () => {
 
       console.log(updatedOrder);
 
-      fetch(`https://scary-coffin-51525.herokuapp.com/updateOrder/${id}`, {
+      fetch(`https://tour-api-6xw9.onrender.com/updateOrder/${id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",
